@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: darkblue;
+    margin: 0;
+    padding: 30px;
+}
+.report-card{
+    width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+
+}
+h1{
+    color: darkblue;
+    text-align: center;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 15px;
+    letter-spacing: 2px;
+
+}
+#output{
+    text-align: justify;
+    font-size: 22px;
+    line-height: 2;
+    padding: 20px;
+}
+#footer{
+    text-align: left;
+    margin-top: 30px;
+    color: gray;
+    font-size: 14px;
+}
+.report-card:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}

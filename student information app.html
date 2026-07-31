@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>students page</title>
+        <link rel="stylesheet" href="student information.css">
+    </head>
+    <body>
+    <div class="report-card">        
+    <h1>student  Information</h1>
+    <div id="output"></div>
+    </div>
+    <p id="footer">Created by Favour</p>
+    <script>   
+        //Get users information
+        let name = (prompt("Enter your name: "))
+        let age = Number(prompt("Enter your age: "));
+        let language = prompt("Enter your favourite programming language: ");
+        let score = Number(prompt("Enter your exam score: "));
+        //determine grade
+        let grade;
+        if (score >= 70) {
+            grade = "A";   
+        }
+        else if (score >= 60) {
+            grade = "B";
+        }
+        else if (score >= 50) {
+            grade = "C";
+        }
+        else if (score >= 40) {
+            grade = "D";
+        }
+        else {
+            grade = "F"
+        }
+        // store information in an array
+        let student = [name, age, language, score, grade];
+        //function to display the information
+        function showStudent() {
+            document.getElementById("output").innerHTML
+            = 
+            "<strong>Name:</strong> " + student[0] + "<br>" +
+            "<strong>Age:</strong> " + student[1] + "<br>" +
+            "<strong>Language:</strong> " + student[2] + "<br>" +
+            "<strong>Score:</strong> " + student[3] + "<br>" +
+            "<strong>Grade:</strong> <span style='color:green;'>" + student[4];"</span>" 
+        }
+        showStudent();
+    </script>
+    </body>
+
+</html>
